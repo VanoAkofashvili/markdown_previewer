@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Open Sans', sans-serif;
+  background-color: #c1c8e4;
+}
+
+code {
+  font-family: monospace;
+  color: crimson;
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 105%;
+}
+
+
+
+textarea {
+  position: relative;
+  z-index: 10;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 400px;
+  transition: all .2s ease-in;
+  outline: none;
+  border-radius: 4px;
+  line-height: 16px;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
+}
+
+textarea:hover{
+  transform: translateY(-20px) scale(1.04);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8);
+  z-index: 20;
+}
+
+.Editor, .Preview {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.Editor {
+  padding: 15px;
+  min-height: 400px;
+  margin-top: 30px;
+}
+
+.Preview {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 25px 60px 15px rgba(0, 0, 0, 0.6);
+  margin-bottom: 30px;
+}
+
+.Toolbar {
+  background-color: black;
+  color: white;
+  font-family: inherit;
+  padding: 12px;
+  text-align: center;
+  font-size: 18px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 11;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.Editor .Toolbar {
+  right: 15px;
+  top: 15px;
+}
